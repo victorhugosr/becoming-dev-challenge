@@ -1,0 +1,71 @@
+@import url(reset.css);
+
+body {
+    font-size: 16px;
+    background: var(--color-bg-main);
+}
+
+.to-do-app {
+    background: #ffffff;
+    font-weight: 800;
+    width: 550px;
+    height: 980px; 
+    margin: 68.5px auto;
+    border-radius: 30px;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.723);
+}
+
+.challenge-container {
+    margin: 12px auto;
+    width: 525px;
+    height: 186px;
+    background: var(--color-bg-main);
+    border-radius: 30px;
+}
+
+.title-challenge {
+    
+    color: white;
+    font-weight: 800;
+    font-size: 2.19rem;
+    margin: 0px auto 12px auto;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 2.81rem;
+    margin-top: -20px;
+}
+
+
+.marquee {
+    width: 525px;
+    height: 62px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: repeating-linear-gradient(-45deg, #ECD400, #ECD400 12px, #FFE600 10px, #FFE600 25px);
+    margin-top: -7px;
+  }
+  .marquee span {
+    font-size: 2.19rem;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  .centralizer {
+    align-items: center;
+    text-align: center;
+  }
