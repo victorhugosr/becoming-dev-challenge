@@ -1,6 +1,6 @@
-# becoming-dev-challenge
-### Challenge - 7 months to become a junior dev!
+<p align="center"><b>becoming-dev-challenge</b></p>
 
+<h1 align="center"><b>Challenge - 7 months to become a junior dev!</b></h1>
 <div align="center">
     <img width="250px" title="Becoming dev challenge - image" src="https://github.com/victorhugosr/becoming-dev-challenge/assets/125200045/e766e1c7-ddad-4ac1-8f64-22f8ae61f636"/>
 <div>
