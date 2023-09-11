@@ -2,9 +2,9 @@
 ### Challenge - 7 months to become a junior dev!
 
 <div align="center">
-  ![Becoming dev challenge - image](https://github.com/victorhugosr/becoming-dev-challenge/assets/125200045/e766e1c7-ddad-4ac1-8f64-22f8ae61f636)
-</div>
-
+    <img width="250px" title="Becoming dev challenge - image" src="https://github.com/victorhugosr/becoming-dev-challenge/assets/125200045/e766e1c7-ddad-4ac1-8f64-22f8ae61f636"/>
+<div>
+  
 Often, we struggle to start something and stay committed until the end, and in programming, it's no different. So, I've decided to create a days studied/practiced counter with the following goal: to become a junior developer in 7 months of dedicated effort!
 For this consistency to work, it's important to have a reward system. Something as simple as being able to see successful days on your computer screen can already help you stay on track and motivated.
 
