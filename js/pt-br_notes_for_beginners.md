@@ -14,8 +14,10 @@ __Para que ```Date``` seja um objeto precisamos chamá-lo com o operador 'new', 
 ```
 function dataAtualizadaDesafio(){ 
     const dataFormatada = currentDate.toLocaleDateString();
-    document.getElementById('idDoSeuElementoHTML').textContent
+    document.getElementById('idDoSeuElementoHTML').textContent = `${dataFormatada} - Day ${contadorDeDias} of the challenge;`
  }
+ 
 ```
->>document.getElementById // Método JS usado para pegar uma referência do seu documento HTML
->>toLocaleDateString(); //Método JS usado para converter o objeto data para o formato de data localizada no navegador do usuário.
+>>```document.getElementById``` // Método JS usado para pegar uma referência do seu documento HTML
+>>```toLocaleDateString();``` //Método JS usado para converter o objeto data para o formato de data localizada no navegador do usuário.
+>>>```textContent``` é uma propriedade de elementos HTML que permite acessar e modificar o conteúdo de texto dentro desse elemento
