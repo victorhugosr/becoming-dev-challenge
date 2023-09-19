@@ -2,7 +2,19 @@
 
 body {
     font-size: 16px;
-    background: var(--color-bg-main);
+    background: var(--bg-challenge-container);
+}
+
+.uppercase,
+.title-challenge,
+.button-style {
+  text-transform: uppercase;
+}
+
+.same-color,
+.title-challenge,
+.button-style {
+  color: #ffffff;
 }
 
 .to-do-app {
@@ -19,17 +31,14 @@ body {
     margin: 12px auto;
     width: 525px;
     height: 186px;
-    background: var(--color-bg-main);
+    background: var(--bg-challenge-container);
     border-radius: 30px;
 }
 
 .title-challenge {
-    
-    color: white;
     font-weight: 800;
     font-size: 2.19rem;
     margin: 0px auto 12px auto;
-    text-transform: uppercase;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -63,6 +72,15 @@ body {
     100% {
       transform: translate(-100%, 0);
     }
+  }
+
+  .button-style {
+    padding: 0.6rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: bold;
+    background: var(--bg-button-start);
+    
   }
 
   .centralizer {
