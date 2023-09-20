@@ -1,89 +1,123 @@
 @import url(reset.css);
 
 body {
-    font-size: 16px;
-    background: var(--bg-challenge-container);
+  font-size: 16px;
+  background: var(--bg-challenge-container);
 }
+
+.centralizer, 
+#challenge-button-container,
+.title-challenge,
+.study-checklist,
+.centered-form,
+.row {
+text-align: center;
+align-items: center;
+}
+
 
 .uppercase,
 .title-challenge,
 .button-style {
-  text-transform: uppercase;
+text-transform: uppercase;
 }
 
 .same-color,
 .title-challenge,
-.button-style {
-  color: #ffffff;
+.button-style,
+#challenge-text {
+color: #ffffff;
 }
 
 .to-do-app {
-    background: #ffffff;
-    font-weight: 800;
-    width: 550px;
-    height: 980px; 
-    margin: 68.5px auto;
-    border-radius: 30px;
-    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.723);
+  background: #ffffff;
+  font-weight: 800;
+  width: 550px;
+  height: 980px; 
+  margin: 68.5px auto;
+  border-radius: 30px;
+  box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.723);
 }
 
 .challenge-container {
-    margin: 12px auto;
-    width: 525px;
-    height: 186px;
-    background: var(--bg-challenge-container);
-    border-radius: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 12px auto;
+width: 525px;
+height: 186px;
+background: var(--bg-challenge-container);
+border-radius: 30px;
 }
 
 .title-challenge {
-    font-weight: 800;
-    font-size: 2.19rem;
-    margin: 0px auto 12px auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  font-weight: 800;
+  font-size: 2.19rem;
+  margin: 0px auto 12px auto;
+  flex-direction: column;
 }
 
 .highlight {
-    font-size: 2.81rem;
-    margin-top: -20px;
+  font-size: 2.81rem;
+  margin-top: -20px;
 }
 
 
 .marquee {
-    width: 525px;
-    height: 62px;
-    overflow: hidden;
-    white-space: nowrap;
-    background: repeating-linear-gradient(-45deg, #ECD400, #ECD400 12px, #FFE600 10px, #FFE600 25px);
-    margin-top: -7px;
+  width: 525px;
+  height: 62px;
+  overflow: hidden;
+  white-space: nowrap;
+  background: repeating-linear-gradient(-45deg, #ECD400, #ECD400 12px, #FFE600 10px, #FFE600 25px);
+  margin-top: -7px;
+}
+.marquee span {
+  font-size: 2.19rem;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-  .marquee span {
-    font-size: 2.19rem;
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 20s linear infinite;
+  100% {
+    transform: translate(-100%, 0);
   }
+}
+
+
+#challenge-button-container {
+  margin-bottom: 20px;
   
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
+  
+}
 
-  .button-style {
-    padding: 0.6rem;
-    border-radius: .5rem;
-    border: none;
-    font-weight: bold;
-    background: var(--bg-button-start);
-    
-  }
+.button-style {
+  padding: 0.6rem;
+  border-radius: .5rem;
+  border: none;
+  margin: 1.25rem auto ;
+  font-weight: bold;
+  background: var(--bg-button-start);
+  
+}
 
-  .centralizer {
-    align-items: center;
-    text-align: center;
-  }
+#challenge-text {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: .5rem;
+  margin: 1.25rem auto ;
+  font-weight: bold;
+  background: var(--bg-challenge-container);
+}
+
+.study-checklist h1 {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+
+
