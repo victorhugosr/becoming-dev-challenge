@@ -8,9 +8,7 @@ body {
 .centralizer, 
 #challenge-button-container,
 .title-challenge,
-.study-checklist,
-.centered-form,
-.row {
+.study-checklist {
 text-align: center;
 align-items: center;
 }
