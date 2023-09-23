@@ -1,6 +1,21 @@
 let currentDate = new Date();
 let dayCounter = 0;
 let challengeActive = false
+let challengeInterval;
+
+function setCookie(name, value){
+    document.cookie = `${name} = ${value};path=/`;
+}
+
+function getCookie(name) {
+    const cookies = document.cookie.split('; ');
+    for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=');
+        if (cookieName === name) {
+            return cookieValue;
+        }
+    }
+}
 
 function updateChallengeText(){
     const formattedDate = currentDate.toLocaleDateString();
@@ -22,6 +37,8 @@ function toggleChallenge() {
             dayCounter++;
             updateChallengeText();
         }, 86400000); //86400000 é a quantidade de milissegundos em um dia.
+
+        setCookie('challengeActive', 'true', 365);
     } else {
         challengeActive = false;
         button.textContent = 'START CHALLENGE';
@@ -30,6 +47,8 @@ function toggleChallenge() {
         clearInterval(challengeInterval);
         dayCounter = 0;
         updateChallengeText();
+
+        setCookie('challengeActive', '', -1);
     }
 
 }
