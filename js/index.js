@@ -50,7 +50,11 @@ function toggleChallenge() {
 
         setCookie('challengeActive', '', -1);
     }
+}
 
+const challengeCookie = getCookie('challengeActive');
+if (challengeCookie === 'true') {
+    toggleChallenge();
 }
 
 updateChallengeText();
