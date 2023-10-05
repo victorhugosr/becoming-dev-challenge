@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
   <title>Desafio 6 meses</title>
 </head>
 
@@ -24,7 +26,7 @@
     </div>
 
     <div id="challenge-button-container">
-      <button id="challenge-button" onclick="toggleChallenge()" class="button-style">start challenge</button>
+      <button id="challenge-button" onclick="startChallenge()" class="button-style">start challenge</button>
       <p id="challenge-status">Pressione para começar o desafio</p>
 
       <p id="challenge-text">-- - Day 0 of the challenge</p>
@@ -40,26 +42,23 @@
         <p>Failed days: <span id="failedDaysCounter"></span></p>
       </div>
 
-      <form action="#">
-        <input type="checkbox" name="check-day-studied" id="daily-study" value="checker">
+        <input type="checkbox" name="check-day-studied" id="daily-study" value="checker" onchange="makeDayAsStudied()">
         <label for="daily-study">Daily study: </label><br>
-        <input type="checkbox" name="check-day-studied" id="daily-practice" value="checker">
+        <input type="checkbox" name="check-day-studied" id="daily-practice" value="checker" onChange="makeDayAsPractice()"">
         <label for="daily-practice">Daily practice: </label>
-      </form>
     </div>
 
-    <div class="status-activity-view">
-      <div class="box-views">
-
-        <!--Aqui vai um js para preencher os 210 quadradinhos-->
-        
+      <div id="days-container">        
       </div>
-    </div>
 
     <p id="daily-phrases">“Nove pessoas não podem fazer um bebê em um mês.”<br>Fred Brooks</p>
-
+    
+    
     <!--Aqui vai o gif do cachorrinho dançando-->
 
+
+    
+    
 
     <p>Desenvolvido por Victor Hugo<br>© 2023 - copyright</p>
 
@@ -69,3 +68,9 @@
 
 </body>
 </html>
+
+
+<!--
+  div.quadradinhos*200>p>lorem5
+    emmet
+  -->

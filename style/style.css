@@ -28,13 +28,14 @@ color: #ffffff;
 }
 
 .to-do-app {
+  box-sizing: border-box;
   background: #ffffff;
   font-weight: 800;
   width: 550px;
-  height: 980px; 
   margin: 68.5px auto;
   border-radius: 30px;
   box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.723);
+  padding: 5px 10px 0;
 }
 
 .challenge-container {
@@ -47,6 +48,7 @@ width: 525px;
 height: 186px;
 background: var(--bg-challenge-container);
 border-radius: 30px;
+overflow: hidden;
 }
 
 .title-challenge {
@@ -54,6 +56,7 @@ border-radius: 30px;
   font-size: 2.19rem;
   margin: 0px auto 12px auto;
   flex-direction: column;
+
 }
 
 .highlight {
@@ -117,5 +120,26 @@ border-radius: 30px;
   text-decoration: underline;
 }
 
+#days-container{
+  width: calc(100% - 20px);
+  background-color: #1e1e1e;
+  padding: 5px 10px;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(10, 1fr);
+}
 
+.day{
+  border-radius: 4px;
+  width: 100%;
+  height: 45px;
+  background-color: #4e4e4e;
+}
+.complete-day{
+  background-color: #faff00;
+}
 
+.half-day{
+  background-color: #00891e;
+}
