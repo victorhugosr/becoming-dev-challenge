@@ -1,0 +1,9 @@
+.button-style {
+    padding: 0.6rem;
+    border-radius: .5rem;
+    border: none;
+    margin: 1.25rem auto ;
+    font-weight: bold;
+    background: var(--bg-button-start);
+    
+  }

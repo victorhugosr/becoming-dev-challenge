@@ -2,3 +2,17 @@
     padding: 0;
     margin: 0;
 }
+
+.centralizer, 
+#challenge-button-container,
+.title-challenge,
+.study-checklist {
+text-align: center;
+align-items: center;
+}
+
+.uppercase,
+.title-challenge,
+.button-style {
+text-transform: uppercase;
+}

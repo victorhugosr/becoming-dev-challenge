@@ -1,23 +1,8 @@
 body {
-    font-size: 16px;
     background: var(--bg-challenge-container);
   }
-  
-  .centralizer, 
-  #challenge-button-container,
-  .title-challenge,
-  .study-checklist {
-  text-align: center;
-  align-items: center;
-  }
-  
-  
-  .uppercase,
-  .title-challenge,
-  .button-style {
-  text-transform: uppercase;
-  }
-  
+
+
   .same-color,
   .title-challenge,
   .button-style,
@@ -27,7 +12,7 @@ body {
   
   .to-do-app {
     box-sizing: border-box;
-    background: #ffffff;
+    background: var(--bg-to-do-app);
     font-weight: 800;
     width: 550px;
     margin: 68.5px auto;
@@ -89,21 +74,10 @@ body {
   
   
   #challenge-button-container {
-    margin-bottom: 20px;
-    
-    
-  }
-  
-  .button-style {
-    padding: 0.6rem;
-    border-radius: .5rem;
-    border: none;
-    margin: 1.25rem auto ;
-    font-weight: bold;
-    background: var(--bg-button-start);
+    margin-bottom: 2000px;
     
   }
-  
+
   #challenge-text {
     display: inline-block;
     padding: 0.6rem 1rem;
